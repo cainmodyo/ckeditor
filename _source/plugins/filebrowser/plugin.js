@@ -242,7 +242,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	{
 		var element, fileInput;
 
-		for ( var i in elements )
+		for ( var i = 0; i < elements.length; i++)
 		{
 			element = elements[ i ];
 
@@ -399,7 +399,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 		var definition = evt.data.definition,
 			element;
 		// Associate filebrowser to elements with 'filebrowser' attribute.
-		for ( var i in definition.contents )
+		for ( var i = 0 ; i < definition.contents.length; i++)
 		{
 			if ( ( element = definition.contents[ i ] ) )
 			{
